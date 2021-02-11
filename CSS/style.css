@@ -8,70 +8,84 @@
     font-weight: normal;
 }
 
-#header {
-    width: 70%;
-    height: 200px ;
+.header_wrapper {
     background-color: red;
-    margin-left: 15%;
-    margin-right: 15%;
     display: flex;
+    justify-content: center;
 }
 
-.site-name {
-    flex: 1;
+.name_site {
+    position: relative;
 }
 
-.site-name p {
-    font-family: ImpactRegular;
-    font-size: 67px;
+.name_site p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     color: white;
-    text-align: center
-
+    font-family: 'ImpactRegular';
+    font-size: 90px;
+    position: absolute;
+    top: 50%;                         
+    transform: translate(0, -50%)
 }
 
-.kprf-logo {
-    padding: 20px 20px 20px 0;
-}
-
-.kprf-logo img {
-    width: 200px;
-    height: 170px;
-}
-
-#promo-photo {
+.kprf_logo img{
     margin-top: 20px;
-    width: 70%;
-    height: 100%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-bottom: 20px;
+    min-width: 85%; 
+    height: auto;
+}
+
+
+.promo_photo {
+    margin-top: 20px;
+    background: no-repeat;
+    background-image:url("../Image/promo_photo3.png");
+    background-size:cover;
+    height: 680px;
+}
+
+.kprf_slider {
+    margin: 129px 35px;
+    width: 1040px;
+    height:440px;
+    overflow: hidden;
 }
 
 #menu {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    height: 100px;
-    background-color: red;
-}
-
-#menu ul {
+    margin-top: 20px;
     display: flex;
-    padding: 0;
+    background-color: red;
+    justify-content: space-around;
 }
 
-.menu-bar {
-    list-style-type: none;
-    margin-right: 10px;
-    padding: 20px;
+.menu_bar {
+    box-sizing: border-box;
+    color: white;
+    padding: 10px;
+    font-family: 'ImpactRegular';
+    font-size: 35px;
+    text-decoration: none;
     text-align: center;
-    font-family: ImpactRegular;
-    color:white;
-    font-size: 20px;
-    cursor: default;
+    list-style-type: none;
 }
 
-.menu-bar:hover{
-    color:goldenrod;
-    
+.menu_bar:hover {
+    cursor: pointer;
+    color: goldenrod;
+    border: goldenrod 5px solid;
+    border-radius: 40px;
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px black, 0 0 1em black
 }
 
+@media (min-width: 1440px) {
+    .promo_photo {
+        background-image: url('../Image/promo_photo1440.png');
+    }
+    .kprf_slider {
+        margin: 130px 45px;
+        width: 1200px;
+        height: 400px;
+}
