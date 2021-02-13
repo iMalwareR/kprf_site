@@ -87,5 +87,28 @@
     .kprf_slider {
         margin: 130px 45px;
         width: 1200px;
-        height: 400px;
+        height: 430px;
+    }
 }
+
+/* @media (max-width: 768px) {
+    .name_site p {
+        font-size: 40px;
+    }
+
+    .kprf_logo img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        min-width: 100px; 
+        height: 100px;
+        margin-left: 70px;
+    }
+
+    .promo_photo {
+        margin-top: 20px;
+        background: no-repeat;
+        background-image:url("../Image/promo_photo3.png");
+        background-size:contain;
+        height: 500px;
+    }
+} */
